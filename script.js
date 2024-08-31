@@ -1,5 +1,17 @@
 function firstWord(s) {
   // your code here
+	s = s.trim();
+
+    // Find the index of the first space
+    let firstSpaceIndex = s.indexOf(' ');
+
+    // If there's no space, return the entire string
+    if (firstSpaceIndex === -1) {
+        return s;
+    }
+
+    // Otherwise, return the substring from the start to the first space
+    return s.substring(0, firstSpaceIndex);
 }
 
 // Do not change the code below
